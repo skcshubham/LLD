@@ -34,7 +34,6 @@ class Document {
 public: 
     void addElement(Element *element) {
         elements.push_back(element);
-        cout << "Adding element of type " << typeid(*element).name() << endl;
     }
 
     void render() {
