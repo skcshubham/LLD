@@ -38,8 +38,8 @@ class BurgerFactory {
 };
 
 int main() {
-    BurgerFactory factory;
-    Burger* burger = factory.createBurger("veg");
+    BurgerFactory* factory = new BurgerFactory();
+    Burger* burger = factory->createBurger("veg");
 
     if (burger) {
         burger->prepare();
